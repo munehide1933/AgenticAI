@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env
+database/db/*.db
+logs/*.log
+.vscode/
+.idea/
+.DS_Store
+.venv/
+config/.encryption_key
+agenticai_private/
+private/
+*.pem
+*.key

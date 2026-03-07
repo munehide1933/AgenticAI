@@ -1,0 +1,52 @@
+# Public + Private Strategy
+
+This project is split into two layers:
+
+1. Public capability layer (this repo)
+- Multi-agent orchestration
+- Streamlit demo UI
+- Baseline workflow and persistence
+- Interview/demo materials
+
+2. Private commercial layer (separate private repo/package)
+- Cost control policies
+- Enterprise auth/RBAC/billing
+- Production safety policy packs
+- Custom ranking/routing/IP-specific logic
+
+## How private hooks are loaded
+
+Public code supports optional hooks from a private package.
+
+- Env var: `AGENTICAI_PRIVATE_HOOKS_MODULE`
+- Expected exports in that module:
+  - `get_private_hooks()` factory, or
+  - `PrivateHooks` class
+
+Hook methods (all optional):
+- `enrich_initial_state(state) -> state`
+- `after_workflow(state) -> state`
+- `mutate_response(response, state=...) -> response`
+
+If private hooks are missing or fail, the app falls back to no-op behavior.
+
+## Recommended repo split
+
+Keep this repo public:
+- `agents/`, `core/`, `workflows/`, `ui/` (baseline)
+- `docs/interview/*`
+
+Keep private repo:
+- `agenticai_private/*` commercial logic
+- deployment/infrastructure configs
+- billing and tenant management
+- internal runbooks and production SLO dashboards
+
+## Public release checklist
+
+- Ensure `.env` and keys are excluded by `.gitignore`
+- Keep `config/.encryption_key` out of VCS
+- Run a quick smoke test in public mode
+- Verify no private package paths are committed
+- Ensure release script replaced `README.md` with EN/JA version
+- Ensure release script replaced core internals with public stubs

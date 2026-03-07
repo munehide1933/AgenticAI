@@ -1,0 +1,21 @@
+[project]
+name = "agenticai-v1-0"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.13.3",
+    "asyncio>=4.0.0",
+    "cryptography>=46.0.5",
+    "langchain>=1.2.10",
+    "langchain-core>=1.2.12",
+    "langchain-openai>=1.1.9",
+    "langgraph>=1.0.8",
+    "numpy>=2.4.2",
+    "openai>=2.21.0",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.54.0",
+    "tavily-python>=0.7.21",
+]
