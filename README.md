@@ -160,7 +160,7 @@ Presentation Layer (Streamlit UI)
 
 - 設計と実装方針: `docs/public/IMPLEMENTATION_PATTERNS_EN_JA.md`
 - 公開/非公開ポリシー: `docs/PUBLIC_PRIVATE_STRATEGY.md`
-- 面接資料テンプレート: `docs/interview/*`
+- 資料テンプレート: `docs/interview/*`
 
 ### クイックスタート
 
