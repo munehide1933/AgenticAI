@@ -81,10 +81,7 @@ uv sync
 uv run streamlit run app.py
 ```
 
-Generate hardened public upload package:
-```bash
-bash scripts/prepare_public_release.sh /tmp/agenticai_public_release
-```
+
 
 ---
 
@@ -169,7 +166,3 @@ uv sync
 uv run streamlit run app.py
 ```
 
-安全な公開アップロードパッケージ生成:
-```bash
-bash scripts/prepare_public_release.sh /tmp/agenticai_public_release
-```
