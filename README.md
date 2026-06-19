@@ -1,5 +1,14 @@
 # AgenticAI v1.0 (Public Product Edition)
 
+## License
+
+This public repository is licensed under the Apache License 2.0. See [LICENSE](./LICENSE).
+
+The Apache-2.0 license applies only to the source code and documentation included in this repository. Private commercial modules, private repositories, deployment assets, secrets, datasets, internal runbooks, production dashboards, trademarks, and external service credentials are not included and are not licensed by this repository.
+
+See [PUBLIC_PRIVATE_STRATEGY.md](./docs/PUBLIC_PRIVATE_STRATEGY.md) for the public/private architecture boundary.
+
+
 ## English
 
 ### Product Summary
@@ -80,13 +89,6 @@ In public release output, these files are replaced with product-safe stubs.
 uv sync
 uv run streamlit run app.py
 ```
-## License
-
-This public repository is licensed under the Apache License 2.0. See [LICENSE](./LICENSE).
-
-The Apache-2.0 license applies only to the source code and documentation included in this repository. Private commercial modules, private repositories, deployment assets, secrets, datasets, internal runbooks, production dashboards, trademarks, and external service credentials are not included and are not licensed by this repository.
-
-See [PUBLIC_PRIVATE_STRATEGY.md](./docs/PUBLIC_PRIVATE_STRATEGY.md) for the public/private architecture boundary.
 
 
 ---
