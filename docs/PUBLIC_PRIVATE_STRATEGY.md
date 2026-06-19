@@ -50,3 +50,13 @@ Keep private repo:
 - Verify no private package paths are committed
 - Ensure release script replaced `README.md` with EN/JA version
 - Ensure release script replaced core internals with public stubs
+
+## Licensing Boundary
+
+The code and documentation included in this public repository are licensed under the Apache License 2.0, unless otherwise noted.
+
+The Apache-2.0 license applies only to files actually included in this repository. It does not grant rights to private repositories, private packages, excluded implementation assets, deployment infrastructure, secrets, credentials, datasets, internal runbooks, production dashboards, trademarks, or commercial service offerings.
+
+The private commercial layer described in this document is not included in this repository and is not licensed by this repository.
+
+The `AGENTICAI_PRIVATE_HOOKS_MODULE` interface is an extension boundary. It documents how private hooks may be loaded, but it does not grant access to or rights in any private implementation.
